@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<title>HighCharts App</title>
+	<link rel="stylesheet" href="css/app.css"/>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="lib/highcharts/highcharts.js"></script>
+	<script src="lib/reusable_chart.js"></script>
+</head>
+<body ng-controller="chartCtrl">
+
+	<select ng-model="type" ng-change="change(type)">
+		<option value ="column">column</option>
+		<!-- <option value="columnrange">columnrange</option> -->
+		<option value="bar">bar</option>
+		<option value ="area">area</option>
+		<!-- <option value ="arearange">arearange</option> -->
+		<option value="areaspline">areaspline</option>
+		<option value ="line">line</option>
+		<option value ="spline">spline</option>
+	</select>
+
+	<div id="column-chart" height="100%" chart data="data"></div>
+
+	<script src="lib/angular/angular.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/services.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/filters.js"></script>
+	<script src="js/directives.js"></script>
+</body>
+</html>

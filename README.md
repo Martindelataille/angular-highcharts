@@ -1,2 +1,1 @@
-angular-highcharts
-==================
+## Simple highchart integration with angularjs
